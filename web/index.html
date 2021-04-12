@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Book of planet</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no" >
+		<link rel="icon" href="favicon.png">
+		<link type="text/css" href="css/styles.css" rel="stylesheet" charset="utf-8"/>
+	</head>
+
+	<body>
+
+		<div class="container" id="container">
+			<div class="window" id="window">
+
+				<div class="screen hidden" id="screen">
+
+					<div class="game_window hidden" id="game_window">
+						<div class="logo"></div>
+
+						<div class="table" id="table"></div>	
+
+						<div class="frames_row" id="game_menu" style="top: 86%">
+							<div class="menu" id="menu_left">
+								<div class="counter" id="mode">MODE</div>
+								<div class="counter">
+									<div class="bet_change" id="bet_minus" style="margin-top: -2%">-</div>
+									<div class="counter_value" id="bet">BET</div>
+									<div class="bet_change" id="bet_plus">+</div>
+								</div>
+								<div class="legend">MODE</div>
+								<div class="legend">BET</div>
+							</div>
+							<div class="play_button" id="play_button">
+
+							</div>
+							<div class="menu" id="menu_right">
+								<div class="counter" id="last_win">0</div>
+								<div class="counter" id="balance">0</div>
+								<div class="legend" id="">LAST WIN</div>
+								<div class="legend" id="">BALANCE</div>
+							</div>
+						</div>
+
+						<div class="cover hidden" id="cover">
+							<canvas class="" id="canvas"></canvas>
+						</div>
+
+						<div class="mes_cover hidden" id="mes_cover">
+							<div class="frames_row">
+								<div class="frame" id="decline_double" style="background-image: url(assets/frame_red.png)">
+									<h4>Decline</h4>
+									the chance to double your winnings
+								</div>
+								<div class="frame" id="try_double">
+									<h4>Try to double<br>your winnings</h4>
+									to double your winnings you need to sort the trash in 10 seconds
+								</div>
+							</div>
+						</div>						
+
+					</div>
+
+					<div class="frames_row hidden" id="games_modes_menu">
+						<div class="frame" style="background-image: url(assets/frame_red.png)" id="start_normal">
+							<h4>NORMAL GAME</h4>
+							Normal mode (game without additional bonuses)
+						</div>
+						<div class="frame" id="start_eco">
+							<h4>ECO-FRIENDLY GAME</h4>
+							Eco-friendly mode with increased chances of winning! And each win will donate 0.01% to an eco-fund
+						</div>
+					</div>
+
+					<div class="frames_row" id="progress_frame" style="top: 70%">
+						<div class="progress_bar">
+							<div class="progress" id="progress"></div>
+						</div>
+					</div>
+
+				</div>
+
+				<!--**************************************************************************-->
+				<div class="fin_cover hidden" id="fin_cover">
+					<a href="survey">
+						<div class="frame">
+							<h4>Thanks<br>for playing the game.<br>Please fill the survey</h4>
+						</div>
+					</a>
+				</div>
+
+				<!--**************************************************************************-->
+				<div class="bonus_cover hidden" id="bonus_cover">
+					<div class="water" id="water"></div>
+					<div class="bins"></div>
+					<div class="bonus_counter">
+						<div class="counter" id="time_counter">0</div>
+						<div class="counter" id="garbage_counter">0</div>
+						<div class="legend">TIME</div>
+						<div class="legend">GARBAGE</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="js/game.js"></script>
+
+	</body>
+
+</html>
